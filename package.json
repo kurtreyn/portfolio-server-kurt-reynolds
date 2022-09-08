@@ -4,7 +4,11 @@
   "description": "kurt-reynolds-server",
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon app.js"
+=======
+    "start": "node src/app.js"
+>>>>>>> main
   },
   "author": "Kurt Reynolds",
   "license": "ISC",

@@ -6,7 +6,6 @@ const cors = require('cors');
 const usersRouter = require('./routes/usersRouter');
 const postsRouter = require('./routes/postsRouter');
 const port = process.env.PORT || 8080;
-// const url = config.mongoUrl;
 
 // CONNECT TO ONLINE DATABASE
 const connect = mongoose.connect(process.env.DB_CONNECTION, {
