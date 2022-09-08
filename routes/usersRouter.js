@@ -3,8 +3,10 @@ const User = require('../models/usersModel');
 const passport = require('passport');
 const authenticate = require('../authenticate');
 const cors = require('cors');
-
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 const router = express.Router();
+let tempPass = '';
 
 /* GET users listing. */
 router.get('/', cors(), function (req, res, next) {
@@ -27,11 +29,14 @@ router.post('/signup', cors(), (req, res) => {
         res.setHeader('Content-Type', 'application/json');
         res.json({ err: err });
       } else {
-        if (req.body.firstname) {
-          user.firstname = req.body.firstname;
+        if (req.body.email) {
+          user.email = req.body.email;
         }
-        if (req.body.lastname) {
-          user.lastname = req.body.lastname;
+        if (req.body.password) {
+          tempPass = req.body.password;
+          bcrypt.hash(tempPass, saltRounds, (err, hash) => {
+            user.password = tempPass;
+          });
         }
         user.save((err) => {
           if (err) {

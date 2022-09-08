@@ -6,10 +6,12 @@ const userSchema = new Schema({
   email: {
     type: String,
     default: '',
+    require: true,
   },
   password: {
     type: String,
     default: '',
+    require: true,
   },
   admin: {
     type: Boolean,
