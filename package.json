@@ -2,9 +2,9 @@
   "name": "portfolio-server-kreynolds",
   "version": "1.0.0",
   "description": "kurt-reynolds-server",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "nodemon app.js"
   },
   "author": "Kurt Reynolds",
   "license": "ISC",
