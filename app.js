@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const usersRouter = require('./routes/usersRouter');
 const postsRouter = require('./routes/postsRouter');
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
+const port = process.env.PORT || 443;
 
 // CONNECT TO ONLINE DATABASE
 const connect = mongoose.connect(process.env.DB_CONNECTION, {
@@ -18,13 +19,13 @@ connect.then(
 
 app.use(
   cors({
-    origin: '*',
+    origin: 'https://kurtreyn.netlify.app/',
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
   })
 );
 app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  // res.header('Access-Control-Allow-Origin', 'https://kurtreyn.netlify.app/');
+  // res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://kurtreyn.netlify.app/');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   res.header(
     'Access-Control-Allow-Headers',
