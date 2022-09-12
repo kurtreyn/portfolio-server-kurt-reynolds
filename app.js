@@ -7,6 +7,7 @@ const axios = require('axios');
 const usersRouter = require('./routes/usersRouter');
 const postsRouter = require('./routes/postsRouter');
 const port = process.env.PORT || 8080;
+const path = require('path');
 
 // CONNECT TO ONLINE DATABASE
 const connect = mongoose.connect(process.env.DB_CONNECTION, {
@@ -39,6 +40,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
 app.set('view engine', 'pug');
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
