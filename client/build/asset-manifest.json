@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f41fdd4.css",
+    "main.js": "/static/js/main.867088ee.js",
+    "static/media/leo-designs-960x540.png": "/static/media/leo-designs-960x540.067915ce30509e8081ec.png",
+    "static/media/storyteller-960x540.png": "/static/media/storyteller-960x540.260949e92f5221e7e90c.png",
+    "static/media/knownostalgia-960x540.png": "/static/media/knownostalgia-960x540.91e626fa1885482bee17.png",
+    "static/media/logo.png": "/static/media/logo.4d38336ae4d07452e465.png",
+    "static/media/soChill-960x540.png": "/static/media/soChill-960x540.55e8c15764772e58f28c.png",
+    "static/media/ecom-react960x540.png": "/static/media/ecom-react960x540.f85e41b0a95f253251b1.png",
+    "static/media/burn-after-reading-backend-960x540.png": "/static/media/burn-after-reading-backend-960x540.e5869dc8a9e53afca930.png",
+    "static/media/iDea-960x540.png": "/static/media/iDea-960x540.57a0e3886e665af35255.png",
+    "static/media/iGram-960x540.png": "/static/media/iGram-960x540.662b7d70594d51a7c82e.png",
+    "static/media/burn-after-reading-frontend-960x540.png": "/static/media/burn-after-reading-frontend-960x540.6a040112f70f5e348959.png",
+    "static/media/calcApp-960x540.png": "/static/media/calcApp-960x540.2cb16088957a25e1061d.png",
+    "index.html": "/index.html",
+    "static/media/close-icon.svg": "/static/media/close-icon.3a4f340b9f4b340399e2b64a84033251.svg",
+    "main.2f41fdd4.css.map": "/static/css/main.2f41fdd4.css.map",
+    "main.867088ee.js.map": "/static/js/main.867088ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f41fdd4.css",
+    "static/js/main.867088ee.js"
+  ]
+}
