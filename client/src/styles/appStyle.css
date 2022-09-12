@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --black: #222831;
+  --dark-gray: #393e46;
+  --orange: #fd7014;
+  --white: #eeeeee;
+}
+
+body {
+  /* font-family: 'Google Sans', Roboto, Arial, sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--black);
+}
+
+.app-container {
+  display: flex;
+}

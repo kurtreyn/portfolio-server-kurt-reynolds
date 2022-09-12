@@ -1,0 +1,72 @@
+:root {
+  --black: #222831;
+  --dark-gray: #393e46;
+  --orange: #fd7014;
+  --white: #eeeeee;
+}
+
+.algorithms-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.algorithms-header-section {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.algorithms-left-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.algorithms-logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 15%;
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.algorithms-logo {
+  width: 100%;
+}
+
+.algorithms-right-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.algorithms-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 25%;
+}
+
+.algorithms-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.aalgorithms-icon:hover {
+  transform: scale(1.1);
+}
+
+.algorithms-margin-for-icon {
+  margin-left: 10px;
+}
+
+.algorithms-body {
+  display: flex;
+  width: 100%;
+  margin-top: 140px;
+}

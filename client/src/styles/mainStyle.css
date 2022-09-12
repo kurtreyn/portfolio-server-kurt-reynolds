@@ -1,0 +1,8 @@
+body {
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  /* border: solid 2px black; */
+}

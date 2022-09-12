@@ -1,0 +1,34 @@
+.algorithm-container {
+  display: flex;
+  color: var(--white);
+  margin-left: 140px;
+  margin-bottom: 80px;
+  width: 90%;
+  outline: solid 1px white;
+}
+
+.algorithms-left-side {
+  display: flex;
+  width: 50%;
+}
+
+.algorithms-right-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.control-buttons {
+  padding: 10px;
+}
+
+.content-monitor {
+  margin-top: 10px;
+  outline: solid 1px green;
+}
+
+.function-body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
