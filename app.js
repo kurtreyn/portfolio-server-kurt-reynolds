@@ -20,7 +20,7 @@ connect.then(
 app.use(
   cors({
     // origin: 'http://localhost:3000',
-    origin: 'https://kurtreyn.netlify.app/',
+    origin: 'https://kurtreyn.netlify.app',
     // origin: 'http://54.159.80.88/',
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
   })
@@ -28,7 +28,7 @@ app.use(
 app.use(function (req, res, next) {
   // res.header('Access-Control-Allow-Origin', 'http://54.159.80.88/');
   // res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
-  res.header('Access-Control-Allow-Origin', 'https://kurtreyn.netlify.app/');
+  res.header('Access-Control-Allow-Origin', 'https://kurtreyn.netlify.app');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   next();
 });
