@@ -39,7 +39,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
 app.set('view engine', 'pug');
-app.use(express.static(path.join(__dirname, 'client/build')));
+// app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
