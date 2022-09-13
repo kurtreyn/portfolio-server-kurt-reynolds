@@ -20,7 +20,7 @@ connect.then(
 app.use(
   cors({
     origin: [
-      'https://kurtreyn.netlify.app',
+      'https://kurtreyn.netlify.app/',
       'https://kurtreyn.netlify.app/users/login',
       'https://kurtreyn.netlify.app/project_settings',
       'http://localhost:3000',
@@ -31,7 +31,7 @@ app.use(
 app.use(function (req, res, next) {
   res.header(
     'Access-Control-Allow-Origin',
-    'https://kurtreyn.netlify.app',
+    'https://kurtreyn.netlify.app/',
     'http://localhost:3000',
     'https://kurtreyn.netlify.app/users/login',
     'https://kurtreyn.netlify.app/project_settings'
