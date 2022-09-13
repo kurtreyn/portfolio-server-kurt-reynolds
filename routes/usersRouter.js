@@ -70,6 +70,7 @@ router.post('/profile', cors(), passport.authenticate('local'), (req, res) => {
 router.post('/login', cors(), passport.authenticate('local'), (req, res) => {
   const token = authenticate.getToken({ _id: req.user._id });
   res.statusCode = 200;
+  res.setHeader('Access-Control-Allow-Origin');
   res.setHeader('Content-Type', 'application/json');
   res.json({
     success: true,
