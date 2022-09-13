@@ -36,6 +36,7 @@ app.use(function (req, res, next) {
     'https://kurtreyn.netlify.app/users/login',
     'https://kurtreyn.netlify.app/project_settings'
   );
+  res.header('Access-Control-Allow-Headers: origin, content-type, accept');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   next();
 });
