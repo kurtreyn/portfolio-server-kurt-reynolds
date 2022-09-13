@@ -19,12 +19,7 @@ connect.then(
 
 app.use(
   cors({
-    origin: [
-      'https://kurtreyn.netlify.app/',
-      'https://kurtreyn.netlify.app/users/login',
-      'https://kurtreyn.netlify.app/project_settings',
-      'http://localhost:3000',
-    ],
+    origin: ['https://kurtreyn.netlify.app'],
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
   })
 );
